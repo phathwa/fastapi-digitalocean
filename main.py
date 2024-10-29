@@ -22,5 +22,8 @@ app.add_middleware(
 def random_number():
     return random.randint(1, 6)
 
+def main():
+    return {"message: Welcome FastAPI!"}
+
 if __name__ == "__main__":
     uvicorn.run("main:app", port=8000, reload=True)
