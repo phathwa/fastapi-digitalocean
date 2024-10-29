@@ -22,6 +22,7 @@ app.add_middleware(
 def random_number():
     return random.randint(1, 6)
 
+app.get("/")
 def main():
     return {"message: Welcome FastAPI!"}
 
