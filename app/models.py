@@ -1,7 +1,7 @@
-from sqlalchemy import Column, Integer, String
+from sqlalchemy import Column, Integer, Sequence, String
 from app.database import Base
 
 class Item(Base):
-    __tablename__ = "item"
-    id = Column(Integer, primary_key=True, index=True)
-    name = Column(String, index=True)
+    __tablename__ = 'item'
+    id = Column(Integer, Sequence('item_id_seq'), primary_key=True)
+    name = Column(String)
