@@ -4,3 +4,4 @@ pydantic
 sqlalchemy
 pymysql
 gunicorn
+psycopg2-binary
